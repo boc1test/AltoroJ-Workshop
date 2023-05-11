@@ -1,6 +1,8 @@
 name: "HCL AppScan SAST"
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - master
 jobs:
   scan:
     runs-on: ubuntu-latest
